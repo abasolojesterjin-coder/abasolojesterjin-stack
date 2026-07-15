@@ -6,35 +6,126 @@
   <title>Jester Jin S. Abasolo | IT Portfolio</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Segoe UI', sans-serif; background: #f5f5f5; color: #333; line-height: 1.6; }
-    nav { background: #2c3e50; padding: 14px 32px; display: flex; justify-content: space-between; align-items: center; }
+    body { font-family: 'Segoe UI', sans-serif; background: #121212; color: #e0e0e0; line-height: 1.6; }
+
+    nav { padding: 16px 32px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #2a2a2a; }
     nav .logo { color: #fff; font-weight: 700; font-size: 1rem; }
     nav ul { list-style: none; display: flex; gap: 24px; }
-    nav ul a { color: #ccc; text-decoration: none; font-size: .9rem; }
+    nav ul a { color: #888; text-decoration: none; font-size: .9rem; }
     nav ul a:hover { color: #fff; }
-    .hero { background: #2c3e50; color: #fff; text-align: center; padding: 60px 20px 50px; border-bottom: 4px solid #3498db; }
-    .hero img { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; object-position: center top; border: 3px solid #3498db; margin-bottom: 18px; }
-    .hero h1 { font-size: 1.9rem; margin-bottom: 6px; }
-    .hero .role { color: #3498db; font-size: 1rem; margin-bottom: 4px; }
-    .hero .tagline { color: #aaa; font-size: .88rem; }
-    section { padding: 48px 20px; max-width: 760px; margin: 0 auto; }
-    section + section { border-top: 1px solid #ddd; }
-    h2 { font-size: 1.3rem; color: #2c3e50; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #3498db; display: inline-block; }
-    .about p { color: #555; font-size: .95rem; }
-    .skills-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
-    .skill { background: #2c3e50; color: #fff; padding: 6px 16px; border-radius: 4px; font-size: .85rem; }
-    .project { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 20px 22px; margin-bottom: 14px; }
-    .project h3 { font-size: 1rem; color: #2c3e50; margin-bottom: 6px; }
-    .project p { font-size: .88rem; color: #666; margin-bottom: 10px; }
-    .project-tags { display: flex; gap: 8px; flex-wrap: wrap; }
-    .project-tags span { background: #eaf2fb; color: #2980b9; padding: 3px 10px; border-radius: 4px; font-size: .78rem; }
-    .contact-list { list-style: none; }
-    .contact-list li { margin-bottom: 8px; font-size: .93rem; color: #555; }
-    .contact-list li strong { color: #2c3e50; }
-    .github-btn { display: inline-flex; align-items: center; gap: 8px; margin-top: 20px; background: #24292e; color: #fff; text-decoration: none; padding: 10px 20px; border-radius: 6px; font-size: .9rem; font-weight: 600; }
-    .github-btn:hover { background: #3a3f45; }
-    .github-btn svg { width: 20px; height: 20px; fill: #fff; }
-    footer { text-align: center; padding: 24px; font-size: .82rem; color: #aaa; border-top: 1px solid #ddd; }
+
+    .hero { text-align: center; padding: 60px 20px 50px; border-bottom: 1px solid #2a2a2a; }
+    .hero img { width: 130px; height: 130px; border-radius: 50%; object-fit: cover; object-position: center top; border: 2px solid #444; margin-bottom: 16px; }
+    .hero h1 { font-size: 1.8rem; color: #fff; margin-bottom: 6px; }
+    .hero .role { color: #aaa; font-size: .95rem; margin-bottom: 4px; }
+    .hero .tagline { color: #666; font-size: .85rem; }
+
+    section { padding: 44px 20px; max-width: 720px; margin: 0 auto; border-bottom: 1px solid #2a2a2a; }
+    h2 { font-size: 1.1rem; color: #fff; margin-bottom: 18px; text-transform: uppercase; letter-spacing: .1em; }
+
+    .about p { color: #999; font-size: .93rem; }
+
+    .skills-list { display: flex; flex-wrap: wrap; gap: 8px; }
+    .skill { border: 1px solid #333; color: #ccc; padding: 5px 14px; border-radius: 4px; font-size: .83rem; }
+
+    .project { border: 1px solid #2a2a2a; border-radius: 6px; padding: 18px 20px; margin-bottom: 12px; background: #1a1a1a; }
+    .project h3 { font-size: .97rem; color: #fff; margin-bottom: 6px; }
+    .project p { font-size: .85rem; color: #888; margin-bottom: 10px; }
+    .project-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+    .project-tags span { background: #222; color: #777; padding: 2px 10px; border-radius: 4px; font-size: .75rem; border: 1px solid #333; }
+
+    .contact-list { list-style: none; margin-bottom: 20px; }
+    .contact-list li { margin-bottom: 8px; font-size: .92rem; color: #888; }
+    .contact-list li strong { color: #ccc; }
+
+    .btn-row { display: flex; gap: 10px; flex-wrap: wrap; }
+    .icon-btn { display: inline-flex; align-items: center; gap: 8px; background: #1e1e1e; color: #ccc; text-decoration: none; padding: 9px 18px; border-radius: 6px; font-size: .88rem; border: 1px solid #333; }
+    .icon-btn:hover { border-color: #666; color: #fff; }
+
+    footer { text-align: center; padding: 24px; font-size: .8rem; color: #444; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <span class="logo">BSIT-1B</span>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <img src="received_999619078802302.jpeg" alt="Jester Jin S. Abasolo"/>
+  <h1>Jester Jin S. Abasolo</h1>
+  <p class="role">Information Technology Student</p>
+  <p class="tagline">Future IT Professional &nbsp;|&nbsp; Web Developer &nbsp;|&nbsp; Java Enthusiast</p>
+</div>
+
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <p>I am Jester Jin S. Abasolo, a first-year BSIT student at Davao Del Norte State College (DNSC). I am passionate about software development and building systems that solve real-world problems. My goal is to become a reliable IT professional who creates meaningful and practical solutions.</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-list">
+    <span class="skill">HTML</span>
+    <span class="skill">CSS</span>
+    <span class="skill">JavaScript</span>
+    <span class="skill">Java</span>
+    <span class="skill">Database Management</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3>Bank Management System</h3>
+    <p>A console-based banking app built in Java using JOptionPane. Handles account creation, deposits, withdrawals, and balance inquiries.</p>
+    <div class="project-tags"><span>Java</span><span>JOptionPane</span><span>OOP</span></div>
+  </div>
+
+  <div class="project">
+    <h3>EqualNet</h3>
+    <p>A website with the tagline "Equal Access, Unlimited Potential" — designed to promote fair access to digital resources and opportunities.</p>
+    <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+  </div>
+
+  <div class="project">
+    <h3>Smart Library Borrowing and Monitoring System</h3>
+    <p>A library system that tracks book borrowing, due dates, and borrower records — replacing manual logbooks with a digital workflow.</p>
+    <div class="project-tags"><span>Java</span><span>Database</span><span>SQL</span></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <ul class="contact-list">
+    <li><strong>Email:</strong> jesterjin.abasolo@email.com</li>
+    <li><strong>Location:</strong> Davao, Philippines</li>
+  </ul>
+  <div class="btn-row">
+    <a class="icon-btn" href="https://github.com/abasolojesterjin-coder" target="_blank">
+      <img src="https://cdn.simpleicons.org/github/white" width="18" height="18"/>
+      Visit My GitHub
+    </a>
+    <a class="icon-btn" href="https://drive.google.com/drive/folders/1zTT0r5iaG9ZGDNC7FT4PWWwGrvLg-Qvw" target="_blank">
+      <img src="https://cdn.simpleicons.org/googledrive/white" width="18" height="18"/>
+      View My 1st Year Projects
+    </a>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Jester Jin S. Abasolo
+</footer>
+
+</body>
+</html>    footer { text-align: center; padding: 24px; font-size: .82rem; color: #aaa; border-top: 1px solid #ddd; }
   </style>
 </head>
 <body>
